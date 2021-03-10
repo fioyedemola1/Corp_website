@@ -8,9 +8,12 @@ def hello():
     return render_template('index.html', name='')
 
 
+
+
 @app.route("/proj1",methods=["GET", 'POST'])
 def Proj1():
-    f = request.files['file'].read()
+    if request.method == 'POST':
+        f = request.files['file'].read()
     # do logic here
     return render_template('proj1.html')
 
