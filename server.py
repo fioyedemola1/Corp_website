@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 
+from models import word_corr
+
 app = Flask(__name__)
 
 
@@ -21,11 +23,17 @@ def Proj1():
 
 @app.route("/proj2", methods=["GET", 'POST'])
 def proj2():
-    value = {'thing': 'thank you', 'okay': 'lols'}
+    content = {}
+    option = ''
     if request.method == 'POST':
-        f = request.files['file'].read()
+        f = request.form['sample']
+        print(f)
+        # word,options = word_corr(f)
+        # content['words'] = word
+        # option = options
+        # print('no')
         # do logic here
-    return render_template('proj2.html',value=value)
+    return render_template('proj2.html', value=content, value2=option)
 
 
 

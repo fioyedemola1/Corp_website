@@ -41,13 +41,15 @@
     <!-- header
     ================================================== -->
     <header class="s-header">
-
+{% block logo %}
         <div class="header-logo">
             <a class="site-logo" href="index.html">
                 <img src="./static/images/logo.png" alt="Homepage">
             </a>
         </div>
+{% endblock  %}
 
+        {% block nav %}
         <nav class="header-nav">
 
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
@@ -92,6 +94,7 @@
             <span class="header-menu-text">Menu</span>
             <span class="header-menu-icon"></span>
         </a>
+{% endblock  %}
 
     </header> <!-- end s-header -->
 
