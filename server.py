@@ -27,11 +27,12 @@ def proj2():
     option = ''
     if request.method == 'POST':
         f = request.form['sample']
-        print(f)
-        # word,options = word_corr(f)
-        # content['words'] = word
-        # option = options
-        # print('no')
+
+        word,options = word_corr(f)
+        content['words'] = word
+        option = options
+        print(options)
+        print(content)
         # do logic here
     return render_template('proj2.html', value=content, value2=option)
 
