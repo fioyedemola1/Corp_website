@@ -1,5 +1,5 @@
 # Models for the views
-
+print('ok')
 from spellchecker import SpellChecker
 from autocorrect import Speller
 
