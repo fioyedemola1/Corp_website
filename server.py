@@ -43,6 +43,11 @@ def styles():
     return render_template('styles.html')
 
 
+@app.route("/base")
+def base():
+    return render_template('base.html')
+
+
 
 
 

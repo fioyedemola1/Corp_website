@@ -1488,7 +1488,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility78: hidden;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -2384,7 +2384,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .services-list .service-item {
-    margin-bottom: .9rem;
+    margin-bottom: 1.5rem;
 }
 
 .services-list .service-item h3 {
