@@ -2,6 +2,9 @@
 print('ok')
 from spellchecker import SpellChecker
 from autocorrect import Speller
+import base64
+import requests
+
 
 corr= Speller('en')
 
@@ -25,3 +28,36 @@ def word_corr(words):
 
 
 checker.distance= 2
+
+
+
+
+API = "AIzaSyDTq4cci16u92_lonCb5CA2oBhYvWagc3I"
+
+def detect_text(image_file, access_token=None):
+    print(type(image_file))
+    with open(image_file, 'rb') as image:
+        base64_image = base64.b64encode(image.read()).decode()
+
+    url = 'https://vision.googleapis.com/v1/images:annotate?key={}'.format(
+                                                                   access_token)
+    header = {'Content-Type': 'application/json'}
+    body = {
+        'requests': [{
+            'image': {
+                'content': base64_image,
+            },
+            'features': [{
+                'type': 'TEXT_DETECTION',
+                'maxResults': 1,
+            }]
+
+        }]
+    }
+    response = requests.post(url, headers=header, json=body).json()
+    text = response['responses'][0]['textAnnotations'][0]['description'] if len(response['responses'][0]) > 0 else ''
+    return text
+
+
+#if __name__ == '__main__':
+#   app.run(debug = True)
