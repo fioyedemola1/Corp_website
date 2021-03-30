@@ -6,12 +6,13 @@ name = "pypi"
 [packages]
 click = "==7.1.2"
 itsdangerous = "==1.1.0"
-autocorrect = "~=2.3.0"
-pyspellchecker = "*"
+autocorrect = "==2.3.0"
+pyspellchecker = "==0.6.1"
 Flask = "==1.1.2"
 Jinja2 = "==2.11.3"
 MarkupSafe = "==1.1.1"
 Werkzeug = "==1.0.1"
+requests = "*"
 
 [dev-packages]
 

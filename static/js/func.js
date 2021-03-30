@@ -1,24 +1,49 @@
 /* Cards Functionality */
 
-let togg = document.getElementsByClassName("runtin");
-let x;
+const triggers = Array.from(document.querySelectorAll('.runtin'));
 
-
-
-for (x = 0; x < togg.length; x++) {
-  togg[x].addEventListener("click", function (){
-    const content = this.nextElementSibling;
-    const serviceIcon = this.querySelector(".fa")
-    if (content.classList.contains("active")){
-      content.classList.remove("active");
-      serviceIcon.classList.remove("collapsed")
-  }
-  else {
-      content.classList.add("active");
-      serviceIcon.classList.add("collapsed");
-  }
+window.addEventListener('click', (ev) => {
   
-  })
+  const clickTarget = ev.target;
+
+  if (triggers.includes(clickTarget)) {
+    const selector = clickTarget.getAttribute('data-target');
+    const serviceIcon = clickTarget.getAttribute("data-class");
+    collapse(selector, 'toggle'); 
+    collapse(serviceIcon, 'toggle');
+    
+  }
+
+  const inactiveItems = triggers.filter(trigger => {
+    if (trigger !== clickTarget) {
+        return trigger;
+    }
+  });
+
+
+  inactiveItems.forEach(inactiveItem => {
+        const item = inactiveItem.getAttribute('data-target');
+        const serviceIcon = inactiveItem.getAttribute("data-class");
+        collapse(item, 'hide');
+        collapse(serviceIcon, 'hide');
+    });
+
+});
+
+
+const fnmap = {
+  'toggle': 'toggle',
+  'show': 'add',
+  'hide': 'remove' 
+};
+
+
+const collapse = (selector, cmd) => {
+  const targets = Array.from(document.querySelectorAll(selector));
+  targets.forEach(target => {
+    target.classList[fnmap[cmd]]('active');
+
+  });
 }
 
 /* Mobile Navigation Toggle Functionality*/
@@ -54,4 +79,5 @@ function fixedNav(){
 }
 
 window.addEventListener('scroll', fixedNav);
+
 

@@ -13,17 +13,20 @@ body{
 }
 
 .card-content{
-    display: none;
+    display: block;
+    max-height: 0px;
     overflow: hidden;
-    transition: display .3s ease-in-out;
+    transition: max-height .5s cubic-bezier(0,1,0,1);
 }
 
 .active.card-content{
-    display: block;
+    max-height: 88em;
+    transition: max-height 0.5s ease-in-out;
 }
 
 a.service-link{
     color: black;
+    font-size: 25px;
 }
 
 a.service-link:hover{
@@ -34,10 +37,12 @@ a.service-link:visited{
     color: black;
 }
 
+
 .runtin i.fa {
     transition: .3s transform ease-in-out;
   }
-  .runtin i.collapsed.fa {
+
+.runtin i.active.fa {
     transform: rotate(90deg);
   }
 
@@ -196,13 +201,17 @@ span.nav-menu-icon:hover::after{
 
 .nav-items-container{
     order: 2;
-    display: none;
+    display: block;
+    max-height: 0em;
+    overflow: hidden;
     text-align: left;
     width: 100%;
+    transition: max-height 0.5s cubic-bezier(0,1,0,1);
 }
 
 .active.nav-items-container{
-    display: block;
+    max-height: 30em;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .nav-items{
@@ -232,6 +241,7 @@ span.nav-menu-icon:hover::after{
     .nav-items-container{
         order: 1;
         width: 80%;
+        max-height: 10em;
         text-align: center;
         display: block;
         margin-right: 10px;
