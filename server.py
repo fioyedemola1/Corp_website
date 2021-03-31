@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-
+import json
 from models import word_corr, detect_text, API
 from werkzeug.utils import secure_filename
 import os
@@ -44,6 +44,8 @@ def proj2():
         word,options = word_corr(f)
         content['words'] = word
         content['options'] = options
+        content['json'] = json.dumps(options)
+
        
         
         # do logic here
