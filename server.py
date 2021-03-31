@@ -33,6 +33,7 @@ def Proj1():
     return render_template('proj1.html', value=results)
 
 
+
 @app.route("/proj2", methods=["GET", 'POST'])
 def proj2():
     content = {}
@@ -42,11 +43,11 @@ def proj2():
 
         word,options = word_corr(f)
         content['words'] = word
-        option = options
-        print(options)
-        print(content)
+        content['options'] = options
+       
+        
         # do logic here
-    return render_template('proj2.html', value=content, value2=option)
+    return render_template('proj2.html', value=content)
 
 
 

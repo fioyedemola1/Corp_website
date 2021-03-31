@@ -15,6 +15,7 @@ word_incorrect = '''adam'''
 def word_corr(words):
     sentence= str(words)
     new_sen = words.splitlines()
+    corrected = []
     wrong = []
 
     for val,item in enumerate(new_sen):
@@ -22,9 +23,10 @@ def word_corr(words):
             correct = checker.correction(word)
             if word != correct:
                 sentence = sentence.replace(word,correct)
-                print(word)
+                corrected.append(correct)
                 wrong.append(word)
-    return sentence,word
+    wordings = dict(zip(wrong,corrected))
+    return sentence, wordings
 
 
 checker.distance= 2
