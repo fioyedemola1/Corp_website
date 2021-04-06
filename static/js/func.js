@@ -1,7 +1,5 @@
 /* Cards Functionality */
 
-/* Cards Functionality */
-
 const triggers = Array.from(document.querySelectorAll('.runtin'));
 
 window.addEventListener('click', (ev) => {
