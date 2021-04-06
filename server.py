@@ -42,6 +42,7 @@ def proj2():
         f = request.form['sample']
 
         word,options = word_corr(f)
+        content['incorrect']= f
         content['words'] = word
         content['options'] = options
         content['json'] = json.dumps(options)
