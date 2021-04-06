@@ -24,6 +24,8 @@
 
 
 {{ value.incorrect }}
+<hr>
+
 {{ value.words }}
 <hr>
 
@@ -33,7 +35,19 @@
 
 
 
+<script>
 
+ let words =  '{{ value.incorrect }}'
+ let predicted =  '{{ value.words }}'
+ let json_words =  '{{ value.json }}'
+
+ if (words){
+  console.log(words)
+  console.log(predicted)
+  console.log(JSON.parse('{{ value.options }}'))
+ }else {
+  console.log('Nothing')}
+</script>
 
 
 {% endblock %}
