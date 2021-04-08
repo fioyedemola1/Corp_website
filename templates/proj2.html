@@ -22,14 +22,14 @@
   </div>
  </section> <!-- end styles -->
 
-
+<!-- 
 {{ value.incorrect }}
 <hr>
 
 {{ value.words }}
 <hr>
 
-{{ value.options }}
+{{ value.options }} -->
 <hr>
 {{ value.json }}
 
@@ -37,16 +37,27 @@
 
 <script>
 
- let words =  '{{ value.incorrect }}'
- let predicted =  '{{ value.words }}'
- let json_words =  '{{ value.json }}'
+// //  let words =  '{{ value.incorrect }}'
+//  let predicted =  '{{ value.words }}'
 
- if (words){
-  console.log(words)
-  console.log(predicted)
-  console.log(JSON.parse('{{ value.options }}'))
- }else {
-  console.log('Nothing')}
+
+
+//  if (words){
+//   console.log(words)
+//   console.log(predicted)
+//   console.log({{ value.data}})
+
+  
+//  }else {
+//   console.log('Nothing')}
+var value =  {{ value|safe }}
+
+if (value.options){
+  
+  console.log (typeof(value.options))
+}else{
+  console.log('nothing')
+}
 </script>
 
 

@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request
-import json
+from flask import Flask, render_template, request, json
+
 from models import word_corr, detect_text, API
 from werkzeug.utils import secure_filename
 import os
@@ -36,7 +36,7 @@ def Proj1():
 
 @app.route("/proj2", methods=["GET", 'POST'])
 def proj2():
-    content = {}
+    content = {'empty': 'empty'}
     option = ''
     if request.method == 'POST':
         f = request.form['sample']
@@ -45,7 +45,12 @@ def proj2():
         content['incorrect']= f
         content['words'] = word
         content['options'] = options
-        content['json'] = json.dumps(options)
+        # content = options
+        
+        # print(content)
+        # print(options)
+       
+        
 
        
         
