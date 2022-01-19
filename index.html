@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="csss/self_custom.css">
+    <link rel="stylesheet" href="css/self_custom.css">
 
 
     <!-- script ================================================= -->
@@ -42,7 +42,7 @@
 <body id="top">
 
     <!-- header
-    ================================================== -->
+    ================================================== --> 3
     <header class="s-header">
         <div class="header-logo">
             <a class="site-logo" href="/">
@@ -94,7 +94,6 @@
             <span class="header-menu-text">Menu</span>
             <span class="header-menu-icon"></span>
         </a>
-{% endblock  %}
 
     </header> <!-- end s-header -->
 
@@ -222,10 +221,10 @@
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <a href="https://icon-library.net/icon/machine-learning-icon-16.html" title="Machine Learning Icon #361053"><img src="https://icon-library.net//images/machine-learning-icon/machine-learning-icon-16.jpg" width="48" height="48"/></a>
+                 <img src="https://icon-library.net//images/machine-learning-icon/machine-learning-icon-16.jpg" width="48" height="48"/>
                 </div>
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.one" data-text="Card-Content" data-class=".fa.fa-chevron-right.first">
+                    <a class="service-link h2 runtin" role="button" onclick="openDropdown(0)" tabindex="0" data-toggle="card-content" data-target=".card-content.one" data-text="Card-Content" data-class=".fa.fa-chevron-right.first">
                         Machine Learning
                         <i class="fa fa-chevron-right pull-right first" ></i>  
                     </a>
@@ -248,7 +247,7 @@
                     <img src="https://img.icons8.com/ios/50/000000/customer-insight--v2.png" width="48" height="48"/>
                 </div>
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.two" data-text="Card-Content" data-class=".fa.fa-chevron-right.two">
+                    <a class="service-link h2 runtin" role="button" onclick="openDropdown(1)" tabindex="0" data-toggle="card-content" data-target=".card-content.two" data-text="Card-Content" data-class=".fa.fa-chevron-right.two">
                         Customer Insight
                         <i class="fa fa-chevron-right pull-right two"></i>
                     </a>
@@ -270,7 +269,7 @@
                     <img src="https://img.icons8.com/pastel-glyph/64/000000/web-analystics.png" width="48" height="48"/>
                 </div>  
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.three" data-text="Card-Content" data-class=".fa.fa-chevron-right.three">
+                    <a class="service-link h2 runtin" role="button" onclick="openDropdown(2)" tabindex="0" data-toggle="card-content" data-target=".card-content.three" data-text="Card-Content" data-class=".fa.fa-chevron-right.three">
                         Web Analytics
                         <i class="fa fa-chevron-right pull-right three"></i>
                      </a>
@@ -292,7 +291,7 @@
                     <i class="icon-earth"></i>
                 </div>
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.four" data-text="Card-Content" data-class=".fa.fa-chevron-right.four">
+                    <a class="service-link h2 runtin" role="button" onclick="openDropdown(3)" tabindex="0" data-toggle="card-content" data-target=".card-content.four" data-text="Card-Content" data-class=".fa.fa-chevron-right.four">
                             Optimization
                         <i class="fa fa-chevron-right pull-right four"></i>
                     </a>
@@ -313,7 +312,7 @@
                     <img src="https://img.icons8.com/pastel-glyph/64/000000/statistics--v3.png" width="48" height="48"/>
                 </div>
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.five" data-text="Card-Content" data-class=".fa.fa-chevron-right.five">
+                    <a class="service-link h2 runtin" role="button" tabindex="0" onclick="openDropdown(4)" data-toggle="card-content" data-target=".card-content.five" data-text="Card-Content" data-class=".fa.fa-chevron-right.five">
                         Data Visualization
                         <i class="fa fa-chevron-right pull-right five"></i>
                     </a>
@@ -334,7 +333,7 @@
                     <img src="https://img.icons8.com/ios-filled/50/000000/big-data.png" width="48" height="48"/>
                 </div>
                 <div class="service-text">
-                    <a class="service-link h2 runtin" role="button" tabindex="0" data-toggle="card-content" data-target=".card-content.six" data-text="Card-Content" data-class=".fa.fa-chevron-right.six">
+                    <a class="service-link h2 runtin" role="button" onclick="openDropdown(5)" tabindex="0" data-toggle="card-content" data-target=".card-content.six" data-text="Card-Content" data-class=".fa.fa-chevron-right.six">
                         Infrastructure
                         <i class="fa fa-chevron-right pull-right six"></i>
                     </a>
