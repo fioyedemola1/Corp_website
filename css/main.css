@@ -3518,6 +3518,8 @@ footer .row {
 }
 .footer-intro {
   color: #39b54a;
+  position: relative;
+  top: -70px;
 }
 .footer-subscribe #mc-form input[type="email"] {
   width: 100%;
