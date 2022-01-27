@@ -2611,6 +2611,18 @@ html.no-csstransitions .home-content__main {
   font-style: italic;
   color: rgba(0, 0, 0, 0.671);
 }
+
+.work-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 16rem;
+}
+.work-btn .btn {
+  border: 2px solid #39b54a;
+  padding-top: 2rem;
+  align-items: center;
+}
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
@@ -3998,7 +4010,7 @@ footer .row {
 
 .s-blog h1 {
   color: rgba(0, 0, 0, 0.747);
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .s-blog .wrapper {
   max-width: 100%;
@@ -4014,7 +4026,7 @@ footer .row {
   margin: 1.5rem;
   background: white;
   position: relative;
-
+  font-size: 1.8rem;
   z-index: 100;
   box-shadow: -15px 5px 15px rgba(0, 0, 0, 0.192);
 }
