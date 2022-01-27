@@ -1139,7 +1139,7 @@ input::-moz-focus-inner {
 
 .stats-tabs li a {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "montserrat-regular", sans-serif;
   font-weight: bold;
   border: none;
@@ -2288,7 +2288,7 @@ html.no-csstransitions .home-content__main {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  box-shadow: -15px 15px 15px #377c40b7;
+  box-shadow: -15px 15px 15px #377c4063;
 }
 
 .stats__col:last-child {
@@ -2297,7 +2297,7 @@ html.no-csstransitions .home-content__main {
 
 .stats__count {
   font-family: "montserrat-bold", sans-serif;
-  font-size: 8.4rem;
+  font-size: 6rem;
   line-height: 1;
   color: #ffffff;
   position: relative;
@@ -2566,8 +2566,11 @@ html.no-csstransitions .home-content__main {
 .s-work {
   padding: 0 0 15rem 16.2rem;
   min-height: 1000px;
-
+  background: black;
   font-size: large;
+}
+.s-work h1 {
+  color: white;
 }
 
 .s-work .section-header {
@@ -2619,9 +2622,13 @@ html.no-csstransitions .home-content__main {
   padding-right: 16rem;
 }
 .work-btn .btn {
-  border: 2px solid #39b54a;
+  border: 2px solid white;
   padding-top: 2rem;
+  color: white;
   align-items: center;
+}
+.work-btn a {
+  font-weight: 900;
 }
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -2844,6 +2851,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-clients {
   padding: 16.3rem;
+  padding-top: 12rem;
   background-color: white;
   color: #757575;
   position: relative;
@@ -3997,12 +4005,13 @@ footer .row {
             12. BLOG SECTION CSS
 ============================================*/
 .s-blog {
-  padding-top: 16.3rem;
-  background: linear-gradient(
+  padding: 16.3rem;
+  /* background: linear-gradient(
       rgba(57, 181, 74, 0.922),
       rgba(57, 181, 74, 0.922)
     ),
-    url("../img/about-2.jpg") center/cover no-repeat;
+    url("../img/about-2.jpg") center/cover no-repeat; */
+  background: #39b54a;
   font-size: larger;
   box-sizing: border-box;
 }
@@ -4032,8 +4041,10 @@ footer .row {
   z-index: 100;
   box-shadow: -15px 5px 15px rgba(0, 0, 0, 0.192);
 }
-.single-blog-card img {
+.s-blog .wrapper .single-blog-card img {
   height: 200px;
+  background: #39b54a;
+  outline: 2px solid #39b54a;
 }
 .single-blog-card span.category {
   z-index: 2;
@@ -4085,4 +4096,24 @@ a.detail-link:hover {
 a.detail-link:hover span {
   transform: translateX(3px);
   margin-left: 8px;
+}
+
+/* GUARANTEE */
+.s-guarantee {
+  padding: 16.3rem;
+  padding-top: 0;
+}
+.s-guarantee .services-text {
+  min-height: 400px;
+  padding: 3rem;
+  box-shadow: -15px 5px 5px 15px rgba(0, 0, 0, 0.027);
+}
+.s-guarantee .services-item h3 {
+  font-size: 2.5rem;
+}
+.s-guarantee .services-text h2 {
+  color: #39b54a;
+}
+.s-guarantee .services-item p {
+  font-size: 2rem;
 }
