@@ -69,8 +69,14 @@ html {
 }
 
 html,
-body {
-  height: 100%;
+body,
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -1874,7 +1880,6 @@ input::-moz-focus-inner {
   display: table-cell;
   width: 100%;
   height: 100%;
-  display: flex;
   vertical-align: middle;
   padding-bottom: 15.6rem;
   position: relative;
@@ -1907,8 +1912,7 @@ input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-  text-align: center;
-  justify-content: center;
+  display: flex;
 }
 
 .home-content__buttons .btn {
@@ -2136,19 +2140,6 @@ html.no-csstransitions .home-content__main {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .home-content h3 {
-    font-size: 1.5rem;
-  }
-  .home-content h1 {
-    font-size: 4rem;
-  }
-  .home-content__main {
-    padding-right: 70px;
-    max-width: 550px;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   .home-content__main {
     max-width: 490px;
@@ -2156,6 +2147,7 @@ html.no-csstransitions .home-content__main {
   .home-content__buttons {
     padding-top: 1.2rem;
     text-align: center;
+    flex-direction: column;
   }
   .home-content__buttons .btn {
     display: block;
@@ -3737,7 +3729,7 @@ footer .row {
 
 /* NEW ON HERO */
 .hero-equal-height.hero-tab-slider {
-  height: 900px;
+  min-height: 800px;
 }
 
 .hero-equal-height {
@@ -3762,7 +3754,10 @@ footer .row {
   width: 100%;
 }
 .hero-equal-height.hero-tab-slider {
-  min-height: 700px !important;
+  min-height: 700px;
+}
+.hero-equal-height.hero-tab-slider {
+  min-height: 700px;
 }
 
 .shape-bottom img.bottom-shape {
@@ -3809,23 +3804,82 @@ footer .row {
   background: url("../img/hero-bg-shape.svg") no-repeat;
 }
 .hero-slider-content {
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
+
 .hero-slider-content span {
+  color: #39b54a;
   font-size: larger;
+  font-weight: 600;
 }
-.hero-slider-content h1 {
-  font-size: 50px;
+.hero-slider-content h1:before {
+  font-size: 5rem;
   line-height: initial;
   font-weight: 500;
   line-height: 1.2em;
   color: white;
+
+  content: "Boost production, efficiency, and profitability.";
 }
 
-@media (min-width: 320px) and (max-width: 991px) {
+@media (min-width: 260px) and (max-width: 991px) {
+  .hero-equal-height {
+    background: linear-gradient(rgba(0, 0, 0, 0.959), rgba(0, 0, 0, 0.952)),
+      url("../img/business-performance.svg") center/cover no-repeat;
+  }
   .hero-shape,
   .shape-four {
     display: none;
+  }
+
+  .hero-slider-content {
+    padding-top: 20rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .hero-slider-content {
+    padding-top: 20rem;
+    text-align: center;
+  }
+
+  .hero-slider-content h1:before {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    padding-right: 1.3rem;
+    color: white;
+    content: "";
+  }
+  .hero-slider-content h1:after {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    padding-right: 1.3rem;
+    color: white;
+    content: "Our primary goal as a creative team is to boost production, efficiency, and profitability.";
+  }
+
+  .hero-slider-content p {
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    padding-right: 1.3rem;
+    color: rgba(255, 255, 255, 0.76);
+  }
+}
+@media (max-width: 497px) {
+  .home-content__buttons {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 433px) {
+  .hero-slider-content h1:after {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 1.3em;
   }
 }
 
