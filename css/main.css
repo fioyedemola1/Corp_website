@@ -2422,26 +2422,35 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  height: 800px;
-  padding: 16.3rem 0 0 15rem;
+  padding: 16.3rem;
   padding-bottom: 13.2rem;
   background-color: #ffffff;
   color: #757575;
   position: relative;
   display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
   justify-content: space-between;
 }
+
 .s-services h1 {
   color: rgba(0, 0, 0, 0.575);
   margin-top: 2rem;
   line-height: 3.8rem;
-  text-align: start;
+  text-align: center;
+}
+.s-services h3 {
+  text-align: center;
 }
 .s-services .col-full {
   color: rgba(0, 0, 0, 0.671);
   margin-top: 2rem;
   line-height: 3.8rem;
   text-align: start;
+}
+.s-services .col-full h1 {
+  line-height: 5rem;
 }
 
 .service-list {
@@ -2451,8 +2460,13 @@ html.no-csstransitions .home-content__main {
   text-align: center;
   align-items: center;
 }
+.service-text p {
+  text-align: center;
+  padding: 1.3rem;
+}
 .service-text h2 {
   padding-left: 1.5rem;
+  display: flex;
 }
 .service-text h2 button {
   background-color: white;
