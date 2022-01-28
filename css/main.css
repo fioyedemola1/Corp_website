@@ -2452,9 +2452,18 @@ html.no-csstransitions .home-content__main {
 .s-services .col-full h1 {
   line-height: 5rem;
 }
-
+.service-list-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 13rem;
+  align-items: center;
+  text-align: center;
+}
 .service-list {
   margin-top: 4rem;
+  padding: auto;
+  width: 40%;
 }
 .service-text {
   text-align: center;
@@ -2486,7 +2495,9 @@ html.no-csstransitions .home-content__main {
   font-size: 2rem;
   color: #000000;
 }
-
+.service-text img:hover {
+  width: 36px;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
