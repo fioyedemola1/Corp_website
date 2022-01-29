@@ -2244,7 +2244,6 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
   padding: 16.2rem;
-  padding-bottom: 0rem;
   color: #010507e8;
   position: relative;
   /* background: linear-gradient(
@@ -2265,6 +2264,11 @@ html.no-csstransitions .home-content__main {
   text-align: center;
   text-align: start;
   max-width: 1024px;
+}
+.about-desc h1 {
+  font-size: 2rem;
+  color: #000000b7;
+  text-align: center;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2435,7 +2439,6 @@ html.no-csstransitions .home-content__main {
 
 .s-services h1 {
   color: rgba(0, 0, 0, 0.719);
-
   margin-top: 2rem;
   line-height: 4.8rem;
   text-align: center;
@@ -2453,7 +2456,7 @@ html.no-csstransitions .home-content__main {
   text-align: start;
 }
 .s-services .col-full h1 {
-  line-height: 4.2rem;
+  line-height: 6rem;
 }
 .service-list-wrapper {
   display: flex;
