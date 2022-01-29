@@ -2689,6 +2689,7 @@ html.no-csstransitions .home-content__main {
   align-items: center;
   justify-content: center;
   padding-right: 16rem;
+  margin-top: 3rem;
 }
 .work-btn .btn {
   border: 2px solid white;
@@ -3992,6 +3993,7 @@ footer .row {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   margin: 5rem;
   position: relative;
   justify-content: space-between;
@@ -4019,6 +4021,7 @@ footer .row {
 .single-blog-card .card-body {
   padding: 1.75rem;
   line-height: 2.6rem;
+  box-shadow: -15px 5px 15px rgba(0, 0, 0, 0.13);
 }
 
 .meta-list {
@@ -4068,6 +4071,22 @@ a.detail-link:hover span {
   padding: 16.3rem;
   padding-top: 0;
 }
+
+#blog img {
+  background: black;
+  outline: 3px solid rgba(0, 0, 0, 0.541);
+}
+#blog {
+  padding-top: 15rem;
+  background: black;
+}
+#blog h1 {
+  color: white;
+}
+
+#blog .services-item {
+  background: black;
+}
 .s-guarantee .services-text {
   min-height: 400px;
   padding: 3rem;
@@ -4080,6 +4099,7 @@ a.detail-link:hover span {
   justify-content: space-between;
 }
 .s-guarantee .services-list .services-item {
+  background: white;
   width: 50%;
 }
 .s-guarantee .services-item h3 {
@@ -4112,8 +4132,9 @@ a.detail-link:hover span {
 @media only screen and (max-width: 800px) {
   .s-clients,
   .s-blog,
+  .s-blog .wrapper,
   .s-contact,
-  .footer-bottom {
+  footer {
     padding: 12rem 2rem;
   }
 }
