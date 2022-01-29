@@ -2244,7 +2244,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
   padding: 16.2rem;
-  padding-bottom: 9rem;
+  padding-bottom: 0rem;
   color: #010507e8;
   position: relative;
   /* background: linear-gradient(
@@ -2358,14 +2358,11 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
   .s-about {
-    padding: 0;
-    padding-left: 2rem;
-    padding-top: 12rem;
+    padding: 4rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .s-about {
-    padding: 0;
     padding-top: 12rem;
     background: #39b54a;
   }
@@ -2405,12 +2402,14 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 508px) {
   .s-about h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
-  .about-desc {
-    font-size: 1.8rem;
+  .about-desc h1 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.808);
     text-align: start;
+    padding-bottom: 3rem;
   }
   .stats__count {
     font-size: 7.8rem;
@@ -2435,7 +2434,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-services h1 {
-  color: rgba(0, 0, 0, 0.993);
+  color: rgba(0, 0, 0, 0.719);
+
   margin-top: 2rem;
   line-height: 4.8rem;
   text-align: center;
@@ -2453,7 +2453,7 @@ html.no-csstransitions .home-content__main {
   text-align: start;
 }
 .s-services .col-full h1 {
-  line-height: 5.2rem;
+  line-height: 4.2rem;
 }
 .service-list-wrapper {
   display: flex;
@@ -2559,7 +2559,7 @@ html.no-csstransitions .home-content__main {
     text-align: start;
   }
   .s-services {
-    padding: 16rem 2rem;
+    padding: 15rem 2rem;
   }
 }
 
@@ -2567,13 +2567,15 @@ html.no-csstransitions .home-content__main {
   .s-services h1 {
     font-size: 4rem;
   }
+
   .s-services h1:nth-child(1) {
     font-size: 2rem;
-  }
-  .service-list p {
-    font-size: 1.6rem;
+    line-height: 2.8rem;
   }
 
+  .s-services p {
+    line-height: 1rem;
+  }
   .services-list {
     margin-top: 4.2rem;
     max-width: 500px;
@@ -2597,6 +2599,9 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
+  .s-services {
+    margin-top: 0;
+  }
   .s-services h3 {
     padding-right: 0rem;
   }
@@ -2607,9 +2612,6 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     justify-content: space-between;
   }
-  .service-text h2 {
-    max-width: 100%;
-  }
 
   .service-list .services-list .service-item:nth-child(n) {
     padding-right: 10px;
@@ -2617,6 +2619,11 @@ html.no-csstransitions .home-content__main {
   }
   .services-list h3 {
     font-size: 2.5rem;
+  }
+  .s-services h1 {
+    max-width: 100%;
+    font-size: 3rem;
+    line-height: 0.2rem;
   }
 }
 
@@ -2741,6 +2748,9 @@ html.no-csstransitions .home-content__main {
   .item-folio__title,
   .item-folio__cat {
     font-size: 1.4rem;
+  }
+  .work-btn {
+    padding-right: 3rem;
   }
 }
 
@@ -2929,6 +2939,9 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 600px) {
   .s-clients {
     padding-top: 12rem;
+  }
+  .s-clients h1 {
+    font-size: 3rem;
   }
   .clients-testimonials::before {
     width: 250px;
@@ -3330,6 +3343,9 @@ html.no-csstransitions .home-content__main {
   .s-contact {
     padding-top: 12rem;
     padding-bottom: 0;
+  }
+  .s-contact h1 {
+    font-size: 3rem;
   }
   .contact__line {
     height: 14.4rem;
@@ -3775,8 +3791,9 @@ footer .row {
   }
 
   .hero-slider-content p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1.5em;
+    margin-top: 2rem;
     padding-right: 1.3rem;
     color: rgba(255, 255, 255, 0.76);
   }
@@ -3790,7 +3807,7 @@ footer .row {
 @media (max-width: 433px) {
   .hero-slider-content h1:after {
     width: 100%;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     line-height: 1.3em;
   }
 }
@@ -3972,6 +3989,7 @@ footer .row {
 ============================================*/
 .s-blog {
   padding: 16.3rem;
+
   /* background: linear-gradient(
       rgba(57, 181, 74, 0.922),
       rgba(57, 181, 74, 0.922)
@@ -4083,6 +4101,7 @@ a.detail-link:hover span {
 #blog h1 {
   color: white;
 }
+
 #blog h2 {
   color: black;
 }
@@ -4094,7 +4113,7 @@ a.detail-link:hover span {
   min-height: 400px;
   padding: 3rem;
   text-align: start;
-  box-shadow: -15px 5px 5px 15px rgba(0, 0, 0, 0.027);
+  box-shadow: -15px 5px 5px 5px rgba(0, 0, 0, 0.158);
 }
 .s-guarantee .services-list {
   display: flex;
@@ -4118,11 +4137,13 @@ a.detail-link:hover span {
 @media (max-width: 1200px) {
   .s-guarantee {
     padding: 10rem 2rem;
+    padding-top: 0;
   }
 }
 @media (max-width: 846px) {
   .s-guarantee .services-list .services-item {
     width: 100%;
+    margin-top: 4rem;
   }
   .s-guarantee h1 {
     font-size: 3.5rem;
