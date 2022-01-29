@@ -2447,7 +2447,7 @@ html.no-csstransitions .home-content__main {
   text-align: start;
 }
 .s-services .col-full h1 {
-  line-height: 4.2rem;
+  line-height: 5.5rem;
 }
 .service-list-wrapper {
   display: flex;
@@ -2539,7 +2539,9 @@ html.no-csstransitions .home-content__main {
   .s-services h3 {
     padding-right: 30rem;
   }
-
+  .s-services .col-full h1 {
+    line-height: 4.2rem;
+  }
   .service-list-wrapper {
     padding: 0;
     margin: 0;
@@ -4088,11 +4090,16 @@ a.detail-link:hover span {
 
 #blog img {
   background: black;
-  outline: 4px solid rgba(0, 0, 0, 0.966);
+
+  width: 100%;
 }
 #blog {
   padding-top: 15rem;
   background: black;
+}
+.single-blog-card .card {
+  border: none;
+  outline: none;
 }
 #blog h1 {
   color: white;
