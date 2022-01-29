@@ -4132,12 +4132,12 @@ a.detail-link:hover span {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .s-clients,
   .s-blog,
   .s-blog .wrapper,
   .s-contact,
   footer {
-    padding: 12rem 2rem;
+    padding: 12rem 3rem;
   }
 }
