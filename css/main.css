@@ -4074,7 +4074,7 @@ a.detail-link:hover span {
 
 #blog img {
   background: black;
-  outline: 3px solid rgba(0, 0, 0, 0.541);
+  outline: 3px solid rgba(0, 0, 0, 0.945);
 }
 #blog {
   padding-top: 15rem;
@@ -4082,6 +4082,9 @@ a.detail-link:hover span {
 }
 #blog h1 {
   color: white;
+}
+#blog h2 {
+  color: black;
 }
 
 #blog .services-item {
