@@ -4074,7 +4074,7 @@ a.detail-link:hover span {
 
 #blog img {
   background: black;
-  outline: 3px solid rgba(0, 0, 0, 0.945);
+  outline: 4px solid rgba(0, 0, 0, 0.966);
 }
 #blog {
   padding-top: 15rem;
@@ -4115,7 +4115,7 @@ a.detail-link:hover span {
   font-size: 2rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .s-guarantee {
     padding: 10rem 2rem;
   }
