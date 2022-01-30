@@ -3828,8 +3828,7 @@ footer .row {
   .hero-slider-content p {
     font-size: 1.8rem;
     line-height: 1.5em;
-    margin-top: 6rem;
-    text-align: start;
+    text-align: center;
     color: rgba(255, 255, 255, 0.76);
   }
 }
