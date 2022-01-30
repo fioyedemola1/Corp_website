@@ -4045,7 +4045,7 @@ footer .row {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+
   margin: 5rem;
   position: relative;
   justify-content: space-between;
