@@ -1547,6 +1547,7 @@ input::-moz-focus-inner {
   display: block;
   margin: 9px 0 0 0;
   padding: 0;
+  filter: brightness(2000%);
   outline: 0;
   border: none;
   width: 80px;
@@ -1811,7 +1812,6 @@ input::-moz-focus-inner {
   .header-logo {
     left: 0px;
     top: 4rem;
-    width: 100rem;
   }
   .header-menu-toggle {
     right: 25px;
