@@ -1531,10 +1531,12 @@ input::-moz-focus-inner {
   display: inline-block;
   position: absolute;
   margin: 0;
+  width: 600px;
+  height: 100%;
   padding: 0;
   left: 40px;
-  filter: brightness(2000%);
   top: 50%;
+  border-radius: 80%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
