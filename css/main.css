@@ -1531,8 +1531,6 @@ input::-moz-focus-inner {
   display: inline-block;
   position: absolute;
   margin: 0;
-  width: 600px;
-  height: 100%;
   padding: 0;
   left: 40px;
   top: 50%;
