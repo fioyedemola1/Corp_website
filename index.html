@@ -44,7 +44,7 @@
     <header class="s-header">
       <div class="header-logo">
         <a class="site-logo" href="#hero">
-          <img src="images/new_logo.svg" alt="Homepage" fill="none" />
+          <img src="images/new_logo.svg" alt="Homepage" />
         </a>
       </div>
 
@@ -287,7 +287,7 @@
 
       <!-- end section-header -->
       <div class="service-list-wrapper">
-        <div class="service-list">
+        <div class="service-list" id="faqlist">
           <div
             class="col-block service-item"
             data-aos="fade-up"
@@ -302,6 +302,7 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#content-accordion-1"
+                    aria-expanded="false"
                   >
                     <img src="img/down-arrow.svg" />
                   </button>
@@ -311,7 +312,13 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#faqlist"
                 >
-                  <div class="accordion-body">
+                  <div
+                    class="accordion-body"
+                    id="content-accordion-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist"
+                    aria-expanded="true"
+                  >
                     <ul>
                       <li>Recommendation Engine</li>
                       <li>Predicting Churn</li>

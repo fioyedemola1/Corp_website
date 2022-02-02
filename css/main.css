@@ -1533,11 +1533,10 @@ input::-moz-focus-inner {
   margin: 0;
   width: 600px;
   height: 100%;
-  fill: none;
-  background: #000000;
   padding: 0;
   left: 40px;
   top: 50%;
+  border-radius: 80%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1545,7 +1544,6 @@ input::-moz-focus-inner {
 }
 
 .header-logo a {
-  filter: brightness(100%);
   display: block;
   margin: 9px 0 0 0;
   padding: 0;
