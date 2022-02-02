@@ -1531,9 +1531,12 @@ input::-moz-focus-inner {
   display: inline-block;
   position: absolute;
   margin: 0;
+  width: 600px;
+  height: 100%;
+  fill: none;
+  background: #000000;
   padding: 0;
   left: 40px;
-  filter: brightness(2000%);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1542,6 +1545,7 @@ input::-moz-focus-inner {
 }
 
 .header-logo a {
+  filter: brightness(100%);
   display: block;
   margin: 9px 0 0 0;
   padding: 0;
