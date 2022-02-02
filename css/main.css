@@ -1811,6 +1811,7 @@ input::-moz-focus-inner {
   .header-logo {
     left: 0px;
     top: 4rem;
+    width: 100rem;
   }
   .header-menu-toggle {
     right: 25px;
